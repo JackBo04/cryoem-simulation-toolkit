@@ -14,7 +14,7 @@
 ```
 cryoem_core_package/
 ├── README.md                          # 本文件
-├── EXPERIMENT_REPORT.md               # 完整实验报告
+├── EXPERIMENT_REPORT.md               # 完整实验报告 (含图片)
 ├── cryoem_experiment_plan.md          # 实验计划文档
 │
 ├── cryo_em_projection.py              # 核心：Numba加速投影生成
@@ -30,10 +30,18 @@ cryoem_core_package/
 │   ├── generate_apodized_masks.py     # 加窗掩膜生成
 │   └── DATASET_DOCUMENTATION.md       # 数据集文档
 │
-└── cryoem_fourier/                    # 傅里叶切片方法 (GPU加速)
-    ├── cryoem_fourier.py              # PyTorch GPU 实现
-    ├── cryoem_simple.py               # 简化版本
-    └── README.md                      # 方法说明
+├── cryoem_fourier/                    # 傅里叶切片方法 (GPU加速)
+│   ├── cryoem_fourier.py              # PyTorch GPU 实现
+│   ├── cryoem_simple.py               # 简化版本
+│   └── README.md                      # 方法说明
+│
+└── images/                            # 📊 实验结果图片
+    ├── projection_final_v2.png        # 纯净投影示例
+    ├── ctf_envelope_comparison.png    # CTF Envelope 效果
+    ├── ctf_simple_comparison.png      # B-factor 参数扫描
+    ├── ctf_detailed_comparison.png    # CTF 详细对比
+    ├── ctf_check.png                  # CTF 验证
+    └── emd_45747_diagnostic.png       # 数据集对比
 ```
 
 ---
