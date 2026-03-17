@@ -67,7 +67,7 @@ E(k) = exp(-B·k²/4)
 
 使用 Numba 加速的投影算法，成功生成了 10,000 张纯净投影：
 
-![纯净投影示例](projection_final_v2.png)
+![纯净投影示例](images/projection_final_v2.png)
 
 *图 1: 10 张不同欧拉角的纯净投影示例。使用半球采样策略 (Rot: 0-360°, Tilt: 0-90°)，图像尺寸 256×256，背景灰度 0.52。*
 
@@ -75,7 +75,7 @@ E(k) = exp(-B·k²/4)
 
 对比了无 Envelope 和不同 B-factor 的 CTF 效果：
 
-![CTF Envelope 对比](ctf_envelope_comparison.png)
+![CTF Envelope 对比](images/ctf_envelope_comparison.png)
 
 *图 2: CTF Envelope 效果对比。左图：无 Envelope，高频振荡过多；中图：B=50 Å²，平滑的 Thon 环；右图：径向强度对比。*
 
@@ -88,7 +88,7 @@ E(k) = exp(-B·k²/4)
 
 系统测试了 B=30, 60, 100 Å² 的效果：
 
-![B-factor 参数扫描](ctf_simple_comparison.png)
+![B-factor 参数扫描](images/ctf_simple_comparison.png)
 
 *图 3: 不同 B-factor 值的 CTF 对比。上排：2D CTF 图像；下排：1D 径向剖面。随着 B 增大，高频信号衰减加剧。*
 
@@ -105,7 +105,7 @@ E(k) = exp(-B·k²/4)
 
 生成并对比了两个不同尺寸的数据集：
 
-![数据集对比](cryoem_aspire/emd_45747_diagnostic.png)
+![数据集对比](images/emd_45747_diagnostic.png)
 
 *图 4: EMD-45747 (BRCA1, 大) vs EMD-54951 (小) 数据集对比。上排：BRCA1 的 Clean/CTF/Noisy；中排：EMD-54951 对应图像；下排：中心区域放大及信号强度统计。*
 
